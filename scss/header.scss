@@ -1,0 +1,68 @@
+#header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 180px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    a {
+      font-size: 40px;
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        color: #2a8aca;
+      }
+    }
+  }
+
+  #downloadBtn {
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #466197;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #header {
+    h1 {
+      font-size: 33px;
+    }
+  }
+}

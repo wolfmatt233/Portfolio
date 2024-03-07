@@ -1,0 +1,22 @@
+#skills {
+  min-height: 70vh;
+  background: linear-gradient(to bottom left, #292929, transparent);
+  padding: 50px 0 25px 0;
+
+  h1 {
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+
+    img {
+      width: 100px;
+    }
+  }
+}

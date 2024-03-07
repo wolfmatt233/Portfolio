@@ -1,0 +1,64 @@
+#examples {
+  background: linear-gradient(to top left, #292929, transparent);
+  height: 70vh;
+  height: 100%;
+  padding: 25px 0 50px 0;
+
+  h1 {
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 10px 0px #2f3139;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #202632;
+    padding: 10px;
+    margin: 30px auto;
+
+    .top-link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      border: 1px solid #202632;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+      h3 {
+        font-weight: 100;
+      }
+
+      .project-langs {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px 0;
+  
+        img {
+          width: 50px;
+        }
+      }
+
+      &:hover {
+        border: 1px solid #2a3241;
+      }
+    }
+
+    .sub-link {
+      text-decoration: none;
+      color: #909090;
+      font-size: 13px;
+      padding: 10px 0;
+      background-color: #28303e;
+      border-radius: 10px;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

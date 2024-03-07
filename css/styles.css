@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #192337;
+  color: #fff;
+}
+
+#header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#header h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+#header .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180px;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#header .links a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+#header .links a:hover {
+  color: #2a8aca;
+}
+#header #downloadBtn {
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #466197;
+  color: #fff;
+  cursor: pointer;
+}
+#header #downloadBtn:hover {
+  filter: brightness(90%);
+}
+
+@media screen and (max-width: 390px) {
+  #header h1 {
+    font-size: 33px;
+  }
+}
+#about {
+  height: 70vh;
+  height: 100%;
+  background: linear-gradient(to top left, #292929, transparent);
+  display: flex;
+  align-items: center;
+  padding: 50px 0 25px 0;
+}
+#about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#about .about-container .img-container {
+  margin-right: 70px;
+}
+#about .about-container .img-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+#about .about-container .about-content {
+  width: 400px;
+}
+#about .about-container .about-content h3 {
+  font-weight: 100;
+}
+#about .about-container .about-content p {
+  text-align: justify;
+  line-height: 23px;
+  font-size: 15px;
+  margin-top: 13px;
+}
+
+@media screen and (max-width: 797px) {
+  #about .about-container {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  #about .about-container .img-container {
+    width: 175px;
+    margin: 0;
+  }
+  #about .about-container .img-container img {
+    width: 175px;
+    height: 175px;
+    margin-bottom: 50px;
+  }
+  #about .about-container .about-content {
+    width: 50%;
+  }
+  #about .about-container .about-content h3 {
+    text-align: center;
+  }
+}
+#skills {
+  min-height: 70vh;
+  background: linear-gradient(to bottom left, #292929, transparent);
+  padding: 50px 0 25px 0;
+}
+#skills h1 {
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 70px;
+}
+#skills .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+#skills .row img {
+  width: 100px;
+}
+
+#examples {
+  background: linear-gradient(to top left, #292929, transparent);
+  height: 70vh;
+  height: 100%;
+  padding: 25px 0 50px 0;
+}
+#examples h1 {
+  font-weight: 100;
+  text-align: center;
+}
+#examples .project-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 2px 10px 0px #2f3139;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #202632;
+  padding: 10px;
+  margin: 30px auto;
+}
+#examples .project-container .top-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #202632;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#examples .project-container .top-link h3 {
+  font-weight: 100;
+}
+#examples .project-container .top-link .project-langs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+#examples .project-container .top-link .project-langs img {
+  width: 50px;
+}
+#examples .project-container .top-link:hover {
+  border: 1px solid #2a3241;
+}
+#examples .project-container .sub-link {
+  text-decoration: none;
+  color: #909090;
+  font-size: 13px;
+  padding: 10px 0;
+  background-color: #28303e;
+  border-radius: 10px;
+}
+#examples .project-container .sub-link:hover {
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
