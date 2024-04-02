@@ -1,5 +1,5 @@
 #header {
-  min-height: 100vh;
+  min-height: 50vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/header.jpg");
   background-position: center;
@@ -13,7 +13,7 @@
     font-size: 40px;
     letter-spacing: 2px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
