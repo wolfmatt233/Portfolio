@@ -1,5 +1,5 @@
 #header {
-  min-height: 50vh;
+  min-height: 40vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/header.jpg");
   background-position: center;
@@ -13,7 +13,7 @@
     font-size: 40px;
     letter-spacing: 2px;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
@@ -25,7 +25,7 @@
     justify-content: space-evenly;
     width: 180px;
     position: absolute;
-    top: 53%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -37,24 +37,6 @@
       &:hover {
         color: #2a8aca;
       }
-    }
-  }
-
-  #downloadBtn {
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #466197;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-      filter: brightness(90%);
     }
   }
 }
