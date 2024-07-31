@@ -111,7 +111,7 @@ body {
     margin-bottom: 50px;
   }
   #about .about-container .about-content {
-    width: 50%;
+    width: 80%;
   }
   #about .about-container .about-content h3 {
     text-align: center;
@@ -236,13 +236,13 @@ body {
     margin-bottom: 30px;
   }
   #examples .container-row .project-container .top-link h3 {
-    font-size: 15px;
+    font-size: 18px;
   }
   #examples .container-row .project-container .top-link .project-img {
     height: 100px;
   }
   #examples .container-row .project-container .top-link p {
-    font-size: 10px;
+    font-size: 13px;
   }
   #examples .container-row .project-container .top-link .project-langs .lang-img {
     width: 25px;
