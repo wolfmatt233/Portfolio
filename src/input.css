@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .example-container {
+    @apply flex flex-col shadow-[0_2px_10px_0px_#2f3139] max-w-[600px] p-3 bg-[#202632] text-center rounded-md mt-10;
+  }
+
+  .example-link {
+    @apply border border-[#202632] px-10 py-3 rounded-lg max-sm:px-2;
+  }
+
+  .example-sub-link {
+    @apply text-gray-400 text-xs bg-[#28303e] rounded-md p-2 mt-4;
+  }
+}

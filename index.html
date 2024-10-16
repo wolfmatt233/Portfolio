@@ -13,61 +13,78 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
-    <div id="app">
-      <div id="header">
-        <h1>Matthew Wolf</h1>
-        <div class="links">
-          <a href="https://github.com/wolfmatt233/"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/matthew-wolf-59a005234/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
+    <div class="max-w-screen-2xl m-auto text-white">
+      <!-- Header -->
+      <div id="header" class="relative min-h-72">
+        <div
+          class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] max-sm:w-full"
+        >
+          <p class="text-4xl text-center font-thin">Matthew Wolf</p>
+          <div class="flex justify-around mt-4 max-sm:w-40 max-sm:mx-auto">
+            <a
+              href="https://github.com/wolfmatt233/"
+              class="text-4xl hover:text-blue-400"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/matthew-wolf-59a005234/"
+              class="text-4xl hover:text-blue-400"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
         </div>
       </div>
-      <div id="examples">
-        <h1>Check out my projects!</h1>
-        <div class="container-row">
-          <div class="project-container">
+
+      <!-- Projects -->
+      <div class="bg-gradient-to-bl from-[#292929] to-transparent py-10">
+        <p class="text-3xl text-center font-thin">Check out my projects!</p>
+
+        <div class="flex flex-wrap justify-evenly">
+          <div class="example-container">
             <a
               href="https://wolfmatt233.github.io/GameAPI/dist/#home"
-              class="top-link"
+              class="example-link hover:border-[#2a3241] group"
             >
-              <h3>Video Game API Website</h3>
+              <p class="text-xl font-thin mb-4">Video Game API Website</p>
+
               <img
-                class="project-img"
+                class="w-full m-auto rounded-md group-hover:brightness-95"
                 src="./assets/GameAPIImg.png"
                 alt="gameapi-img"
               />
-              <p>
+
+              <p class="text-sm mt-4">
                 A single page application that allows you to search through a
                 list of games and, with an account, add games to lists, review
                 games, and see other users' profiles. All is responsive down to
                 a phone screen.
               </p>
 
-              <div class="project-langs">
-                <img class="lang-img" src="./assets/JavaScript.png" alt="js" />
+              <div class="flex items-center justify-evenly mt-4">
+                <img class="w-12" src="./assets/JavaScript.png" alt="js" />
                 <img
-                  class="lang-img"
+                  class="w-12"
                   src="./assets/1280px-Firebase_Logo.svg.png"
                   alt="fb"
                 />
-                <img class="lang-img" src="./assets/sass.svg" alt="sass" />
-                <img class="lang-img" src="./assets/HTML.png" alt="html" />
+                <img class="w-12" src="./assets/sass.svg" alt="sass" />
+                <img class="w-12" src="./assets/HTML.png" alt="html" />
               </div>
             </a>
-            <a href="https://github.com/wolfmatt233/GameAPI" class="sub-link"
+            <a
+              href="https://github.com/wolfmatt233/GameAPI"
+              class="example-sub-link hover:text-white"
               >(Github)</a
             >
           </div>
-          <div class="project-container">
-            <div class="top-link">
-              <h3>Library Management System</h3>
+          <div class="example-container">
+            <div class="example-link hover:border-[#2a3241]">
+              <p class="text-xl font-thin mb-4">Library Management System</p>
               <iframe
-                class="project-img"
+                class="w-full m-auto rounded-md min-h-[232px]"
                 src="https://www.youtube.com/embed/oib3EMAtNmk?si=VZqshqqdEmwL_Ers"
                 title="YouTube video player"
                 frameborder="0"
@@ -75,149 +92,154 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p>
+              <p class="text-sm">
                 A library management website built to allow users to borrow and
                 return different books. Admin features are built in to allow for
                 CRUD features for loans and books. Signup and login are handled
-                by Laravel Breeze. Built using Laravel and styling with Tailwind.
+                by Laravel Breeze. Built using Laravel and styling with
+                Tailwind.
               </p>
-              <div class="project-langs">
+              <div class="flex items-center justify-evenly">
+                <img class="w-12" src="./assets/laravel.png" alt="laravel" />
                 <img
-                  class="lang-img"
-                  src="./assets/laravel.png"
-                  alt="laravel"
-                />
-                <img
-                  class="lang-img"
+                  class="w-12"
                   src="./assets/logo-mysql-170x115.png"
                   alt="mysql"
                 />
-                <img
-                  class="lang-img"
-                  src="./assets/new-php-logo.png"
-                  alt="php"
-                />
-                <img class="lang-img" src="./assets/tailwind.svg" alt="tailwind" />
+                <img class="w-12" src="./assets/new-php-logo.png" alt="php" />
+                <img class="w-12" src="./assets/tailwind.svg" alt="tailwind" />
               </div>
             </div>
             <a
               href="https://github.com/wolfmatt233/LibraryManagement"
-              class="sub-link"
+              class="example-sub-link hover:text-white"
               >(Github)</a
             >
           </div>
-        </div>
-        <div class="container-row">
-          <div class="project-container">
+          <div class="example-container">
             <a
-              href="https://n423-wolfmi.github.io/CocktailAPIWebsite/dist/"
-              class="top-link"
+              href="https://wolfmatt233.github.io/CocktailAPIWebsite/dist/"
+              class="example-link hover:border-[#2a3241] group"
             >
-              <h3>Cocktail API Website</h3>
+              <p class="text-xl font-thin mb-4">Cocktail API Website</p>
+
               <img
-                class="project-img"
+                class="w-full m-auto rounded-md group-hover:brightness-95"
                 src="./assets/CocktailImg.png"
                 alt="cocktail-img"
               />
-              <p>
+
+              <p class="text-sm mt-4">
                 A single page website that allows users to sign up and to view
                 various cocktails from an API. Users can add drinks to their
                 favorites and view them in a user page along with statistics
                 about all of them.
               </p>
-              <div class="project-langs">
-                <img class="lang-img" src="./assets/JavaScript.png" alt="js" />
+              <div class="flex items-center justify-evenly mt-4">
+                <img class="w-12" src="./assets/JavaScript.png" alt="js" />
                 <img
-                  class="lang-img"
+                  class="w-12"
                   src="./assets/1280px-Firebase_Logo.svg.png"
                   alt="fb"
                 />
-                <img class="lang-img" src="./assets/sass.svg" alt="sass" />
-                <img class="lang-img" src="./assets/HTML.png" alt="html" />
+                <img class="w-12" src="./assets/sass.svg" alt="sass" />
+                <img class="w-12" src="./assets/HTML.png" alt="html" />
               </div>
             </a>
             <a
-              href="https://github.com/n423-wolfmi/CocktailAPIWebsite"
-              class="sub-link"
+              href="https://github.com/wolfmatt233/CocktailAPIWebsite"
+              class="example-sub-link hover:text-white"
               >(Github)</a
             >
           </div>
-          <div class="project-container">
+          <div class="example-container">
             <a
-              href="https://n320-wolfmi.github.io/Terraria-React-App/"
-              class="top-link"
+              href="https://wolfmatt233.github.io/Terraria-React-App/"
+              class="example-link hover:border-[#2a3241] group"
             >
-              <h3>React Terraria NPC Data Display</h3>
+              <p class="text-xl font-thin mb-4">
+                React Terraria NPC Data Display
+              </p>
               <img
-                class="project-img"
+                class="w-full m-auto rounded-md group-hover:brightness-95"
                 src="./assets/TerrariaReactImg.png"
                 alt="terraria-img"
               />
-              <p>
+              <p class="text-sm mt-4">
                 A React application that displays a list of characters from
                 Terraria. Each character has their own likes and dislikes that
                 can be viewed and navigated in a modal. A few components were
                 used to display information from a data store and to allow the
                 user to edit basic descriptions.
               </p>
-              <div class="project-langs">
+              <div class="flex items-center justify-evenly mt-4">
                 <img
-                  class="lang-img"
+                  class="w-12"
                   src="./assets/React-icon.svg.png"
                   alt="react"
                 />
-                <img class="lang-img" src="./assets/JavaScript.png" alt="js" />
-                <img
-                  class="lang-img"
-                  src="./assets/CSS3_logo.svg.png"
-                  alt="css"
-                />
+                <img class="w-12" src="./assets/JavaScript.png" alt="js" />
+                <img class="w-12" src="./assets/CSS3_logo.svg.png" alt="css" />
               </div>
             </a>
-            <a href="https://github.com/n320-wolfmi/Project2" class="sub-link"
+            <a
+              href="https://github.com/wolfmatt233/Terraria-React-App"
+              class="example-sub-link hover:text-white"
               >(Github)</a
             >
           </div>
         </div>
       </div>
-      <div id="skills">
-        <h1>Development Knowledge</h1>
-        <div class="row">
-          <img src="./assets/JavaScript.png" alt="js" />
-          <img src="./assets/React-icon.svg.png" alt="react" />
-          <img src="./assets/HTML.png" alt="html" />
-          <img src="./assets/new-php-logo.png" alt="php" />
-          <img src="./assets/CSS3_logo.svg.png" alt="css" />
-          <img src="./assets/sass.svg" alt="sass" />
-          <img src="./assets/logo-mysql-170x115.png" alt="mysql" />
-          <img src="./assets/1280px-Firebase_Logo.svg.png" alt="firebase" />
+
+      <!-- Skills -->
+      <div class="bg-gradient-to-tl from-[#292929] to-transparent py-10">
+        <p class="text-3xl text-center font-thin">Development Knowledge</p>
+
+        <div
+          class="flex flex-wrap w-3/4 mx-auto items-center justify-evenly mt-14"
+        >
+          <img src="./assets/JavaScript.png" alt="js" class="w-12" />
+          <img src="./assets/React-icon.svg.png" alt="react" class="w-12" />
+          <img src="./assets/HTML.png" alt="html" class="w-12" />
+          <img src="./assets/new-php-logo.png" alt="php" class="w-12" />
+          <img src="./assets/CSS3_logo.svg.png" alt="css" class="w-12" />
+          <img src="./assets/sass.svg" alt="sass" class="w-12" />
+          <img src="./assets/logo-mysql-170x115.png" alt="mysql" class="w-12" />
+          <img
+            src="./assets/1280px-Firebase_Logo.svg.png"
+            alt="firebase"
+            class="w-12"
+          />
         </div>
       </div>
-      <div id="about">
-        <div class="about-container">
-          <div class="img-container">
-            <img
-              src="https://avatars.githubusercontent.com/u/84036287?v=4"
-              alt="image"
-            />
-          </div>
-          <div class="about-content">
-            <h3>About me</h3>
-            <p>
+
+      <!-- About -->
+      <div class="bg-gradient-to-bl from-[#292929] to-transparent py-10">
+        <div
+          class="flex flex-wrap items-center justify-evenly w-3/4 mx-auto max-sm:px-5 max-sm:w-full"
+        >
+          <img
+            src="https://avatars.githubusercontent.com/u/84036287?v=4"
+            alt="image"
+            class="w-52 h-52 rounded-md"
+          />
+          <div class="w-[400px] font-light max-[810px]:mt-10">
+            <p class="text-xl">About me</p>
+            <p class="text-justify mt-3">
               My name is Matthew Wolf. I graduated Indiana University
               Indianapolis with a Bachelor's in Informatics and a certificate in
               multi-device web development. I have experience working in
               JavaScript, React, PHP, and HTML/CSS. I can leverage this
               experience to create full-stack websites and web applications.
             </p>
-            <p>
+            <p class="text-justify mt-3">
               My education has given me valuable experience in application
               development including the creation of applications using design
               patterns like CRUD and MVC, creating APIs with PHP, accessing and
               using APIs with JavaScript, and utilizing MYSQL and NoSQL
               databases.
             </p>
-            <p>
+            <p class="text-justify mt-3">
               My interests include playing guitar, video games, and reading!
             </p>
           </div>
