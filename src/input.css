@@ -14,4 +14,8 @@
   .example-sub-link {
     @apply text-gray-400 text-xs bg-[#28303e] rounded-md p-2 mt-4;
   }
+
+  .example-icons-row {
+    @apply flex items-center justify-evenly mt-4;
+  }
 }
